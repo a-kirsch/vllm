@@ -41,9 +41,10 @@ TOKENS_OUTPUT = Gauge(
 )
 
 
-# Choose your model, currently using tiiuae/falcon-rw-1b
+# Choose your model, currently using Llama-2-13B-GPTQ
 # model = "facebook/opt-125m"
-model = "tiiuae/falcon-rw-1b"
+# model = "tiiuae/falcon-rw-1b"
+model = "/home/beams/AKIRSCH/rareevent/vllm/Llama-2-13B-GPTQ"
 
 '''
 Parameters for sampling
@@ -51,7 +52,7 @@ temperature determines the randomness of the output
 top_p controls the diversity of the output
 max_tokens limits the length of the generated response
 '''
-sampling_params = SamplingParams(temperature = 0.1, top_p = 0.95, max_tokens= 50)
+sampling_params = SamplingParams(temperature = 0.1, top_p = 0.95, max_tokens= 500)
 llm = LLM(model = model)
 
 print("Chat session started. Type 'exit' to quit.")
