@@ -52,7 +52,7 @@ temperature determines the randomness of the output
 top_p controls the diversity of the output
 max_tokens limits the length of the generated response
 '''
-sampling_params = SamplingParams(temperature = 0.1, top_p = 0.95, max_tokens= 500)
+sampling_params = SamplingParams(temperature = 0.1, top_p = 0.95, max_tokens= 200)
 llm = LLM(model = model)
 
 print("Chat session started. Type 'exit' to quit.")
