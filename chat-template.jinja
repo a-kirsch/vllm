@@ -1,0 +1,3 @@
+{% for message in messages %}
+{{ '<s>' if loop.first else '' }}[INST] {{ message['content'] }} [/INST]
+{% endfor %}
