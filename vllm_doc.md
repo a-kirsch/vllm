@@ -12,7 +12,7 @@
 ### Download Model
 
 1. Create a **read token** on [Hugging Face](https://huggingface.co/settings/tokens) in **Access Tokens** → **Create Token**
-2. Log in to your account in the terminal:
+2. Log in to your Hugging Face account in the terminal:
 
     ```bash
     huggingface-cli login
@@ -37,6 +37,7 @@
     ```bash
     #!/bin/bash
 
+    # Optional: set GPU
     export CUDA_VISIBLE_DEVICES=1
 
     python -m vllm.entrypoints.openai.api_server \
@@ -81,6 +82,6 @@ ValueError: This model's maximum context length is 8192 tokens. However, you req
 Try the following:
 - Use a model with a larger context window
 - Restart Cline to clear chat history.
-- Shorten the conversation or set `max_tokens` in advanced settings.
+- Adjust `context window` or `max_tokens` in advanced settings.
 
 ---
