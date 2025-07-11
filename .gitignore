@@ -1,2 +1,21 @@
-prometheus-2.52.0.linux-amd64*
+# Ignore all model directories
 Llama-2-13B-GPTQ/
+openchat-3.5-0106/
+Mistral-7B-Instruct-v0.3/
+
+# Ignore Prometheus binaries and archive
+prometheus-2.52.0.linux-amd64/
+prometheus-2.52.0.linux-amd64.tar.gz
+
+# Ignore individual model artifacts and configs
+*.safetensors
+*.json
+*.model
+*.jinja
+README.md
+.gitattributes
+
+# Optional: ignore all tokenizer-related files
+tokenizer.*
+special_tokens_map.json
+generation_config.json

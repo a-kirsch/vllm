@@ -44,7 +44,8 @@ TOKENS_OUTPUT = Gauge(
 # Choose your model, currently using Llama-2-13B-GPTQ
 # model = "facebook/opt-125m"
 # model = "tiiuae/falcon-rw-1b"
-model = "/home/beams/AKIRSCH/rareevent/vllm/Llama-2-13B-GPTQ"
+# model = "/home/beams/AKIRSCH/rareevent/vllm/Llama-2-13B-GPTQ"
+model = "/home/beams/AKIRSCH/rareevent/vllm/openchat-3.5-0106"
 
 '''
 Parameters for sampling
