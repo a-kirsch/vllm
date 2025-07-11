@@ -11,14 +11,14 @@
 
 ### Download Model
 
-1. Create a **read token** on [Hugging Face](https://huggingface.co/settings/tokens).
+1. Create a **read token** on [Hugging Face](https://huggingface.co/settings/tokens) in **Access Tokens** → **Create Token**
 2. Log in to your account in the terminal:
 
     ```bash
     huggingface-cli login
     ```
 
-3. Download an OpenAI-compatible model locally. For example:
+3. Download an OpenAI-compatible model locally. Specify the model, directory, and set use-symlinks to false. For example:
 
     ```bash
     huggingface-cli download mistralai/Mistral-7B-Instruct-v0.3 \
@@ -32,7 +32,7 @@
 
 ### Launch VLLM Server
 
-4. Create a Bash script (e.g. `local_inference.sh`) to launch the VLLM server:
+4. Create a Bash script and specify the endpoint, model, port, host, and datatype. For example:
 
     ```bash
     #!/bin/bash
